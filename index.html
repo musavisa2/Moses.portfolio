@@ -1,0 +1,614 @@
+<title>Moses Nganga Profile</title>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moses Nganga| Safety Professional</title>
+  <meta name="description" content="Professional Safety Officer portfolio website for Moses Nganga - HSE Specialist, Safety Supervisor, and Occupational Safety Professional in Saudi Arabia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    /about/projects.html
+
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #38bdf8;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to right, rgba(15,23,42,0.95), rgba(15,23,42,0.75)),
+                  url('moses.png') center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 3.4rem;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+      max-width: 620px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 26px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    .btn-primary:hover {
+      background: #0ea5e9;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+    }
+
+    .btn-secondary:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    /* Sections */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 2.4rem;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #94a3b8;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .about-card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .about-card p {
+      color: #cbd5e1;
+    }
+
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 18px;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: #38bdf8;
+    }
+
+    .service-card h3 {
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+
+    /* Experience */
+    .timeline {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .timeline-item {
+      background: #1e293b;
+      padding: 25px;
+      border-left: 4px solid #38bdf8;
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
+
+    .timeline-item h3 {
+      color: #f8fafc;
+      margin-bottom: 6px;
+    }
+
+    .timeline-item span {
+      color: #38bdf8;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .timeline-item p {
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+
+    /* Contact */
+    .contact-box {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .contact-box p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+      font-weight: 500;
+      color: #38bdf8;
+    }
+
+    /* Footer */
+    footer {
+      padding: 25px 0;
+      text-align: center;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .btn-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Moses Nganga</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Safety Excellence with <span>Professional Leadership</span></h1>
+        <p>
+          I am Moses Nganga, a dedicated Health, Safety & Environment Professional committed to protecting people,
+          assets, and operations through proactive risk management, regulatory compliance, and world-class safety leadership.
+        </p>
+        <div class="btn-group">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Committed to building safer workplaces through leadership, prevention, and professional HSE systems.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Professional Profile</h3>
+          <p>
+            Experienced Safety Professional with strong expertise in occupational health and safety, scaffolding safety,
+            risk assessments, incident prevention, compliance auditing, and workforce safety leadership across industrial environments.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>My Mission</h3>
+          <p>
+            To create safer, smarter, and more productive workplaces by embedding safety culture, improving operational discipline,
+            and ensuring every worker returns home safely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Professional Services</h2>
+        <p>Comprehensive safety solutions tailored for industrial, construction, and high-risk work environments.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Risk Assessment</h3>
+          <p>Hazard identification, task risk analysis, and practical control implementation for safer operations.</p>
+        </div>
+        <div class="service-card">
+          <h3>Site Safety Supervision</h3>
+          <p>Daily field inspections, permit monitoring, compliance enforcement, and frontline safety leadership.</p>
+        </div>
+        <div class="service-card">
+          <h3>Scaffolding Safety</h3>
+          <p>Scaffold inspection, tagging systems, structural compliance, and safe access management.</p>
+        </div>
+        <div class="service-card">
+          <h3>Training & Toolbox Talks</h3>
+          <p>Safety inductions, awareness sessions, workforce coaching, and practical behavioral safety engagement.</p>
+        </div>
+        <div class="service-card">
+          <h3>Incident Investigation</h3>
+          <p>Root cause analysis, corrective actions, and preventive strategies to reduce repeat incidents.</p>
+        </div>
+        <div class="service-card">
+          <h3>HSE Documentation</h3>
+          <p>Professional preparation of procedures, reports, method statements, audits, and compliance documents.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-title">
+      <h2>Shutdowns & Projects Completed With Zero Incidents</h2>
+      <p>Proven safety leadership across major shutdowns, turnarounds, and high-risk industrial projects delivered with zero incidents and strong HSE performance.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Saudi Kayan Petrochemical (SABIC)</h3>
+        <span>Shutdown & Maintenance Operations</span>
+        <p>
+          Successfully supported shutdown and maintenance activities including COB absorber operations, chemical cleaning,
+          reactor hydro jetting, and bundle pulling with full safety compliance and zero incidents.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Saudi Arabia Iron and Steel Company (HADEED SABIC)</h3>
+        <span>Furnace Refurbishment Project</span>
+        <p>
+          Delivered safe execution of furnace refurbishment activities under strict HSE controls, ensuring operational discipline,
+          hazard management, and incident-free project completion.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Petrokemya (Arabian Petrochemical Company)</h3>
+        <span>Major Shutdown Operations</span>
+        <p>
+          Participated in shutdown activities across PVC, VCM, ABS, and Olefin Units 2 & 3, maintaining high safety standards,
+          permit compliance, and zero incident performance.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>IBN ZAHR (Saudi European Petrochemical Company)</h3>
+        <span>Plant Shutdown Operations</span>
+        <p>
+          Supported shutdown operations across Utilities and PP I, II & III units with strong focus on operational safety,
+          contractor compliance, and effective risk control.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>IBN SINA Petrochemical</h3>
+        <span>Shutdown Contractor Safety Coordination</span>
+        <p>
+          Led contractor safety coordination during shutdown operations, ensuring full compliance, work control,
+          safe execution, and zero incident delivery across all contractor activities.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>SAMAC Petrochemical Company</h3>
+        <span>Turnaround Project</span>
+        <p>
+          Successfully contributed to turnaround safety operations through proactive supervision, hazard prevention,
+          and disciplined HSE implementation with zero incidents.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>SHARQ (Eastern Petrochemical Company)</h3>
+        <span>Shutdown Operations</span>
+        <p>
+          Supported shutdown execution with strong emphasis on safe work practices, operational control,
+          and incident prevention, achieving zero incidents throughout the project.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section id="experience">
+    <div class="container">
+      <div class="section-title">
+        <h2>Professional Experience</h2>
+        <p>A track record of driving safety performance across demanding work environments.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Safety Supervisor</h3>
+          <span>Industrial & Construction Operations | Saudi Arabia</span>
+          <p>
+            Leading safety compliance, conducting inspections, coordinating toolbox talks, and enforcing HSE standards
+            across high-risk operational environments.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Scaffolding Safety Specialist</h3>
+          <span>Access & Work-at-Height Safety</span>
+          <p>
+            Specialized in scaffolding inspection, access safety systems, structural compliance, and work-at-height risk prevention.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>HSE Documentation & Compliance</h3>
+          <span>Procedures | Audits | Reports</span>
+          <p>
+            Developing professional HSE systems, policies, inspection records, risk registers, and compliance documentation
+            aligned with industry best practices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="training">
+  <div class="container">
+    <div class="section-title">
+      <h2>Training & Licences</h2>
+      <p>Certified, trained, and competent in critical safety systems, operational compliance, and industrial risk management.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Driving Licences</h3>
+        <p>Valid Driving License – Saudi Arabia</p>
+        <p>Valid Driving License – Kenya</p>
+      </div>
+
+      <div class="service-card">
+        <h3>SABIC Training</h3>
+        <p>Certified and trained under SABIC safety standards and industrial operational requirements.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>H2S Awareness</h3>
+        <p>Training in hydrogen sulfide hazard recognition, exposure prevention, emergency response, and safe evacuation procedures.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Confined Space Entry & Rescue</h3>
+        <p>Competent in confined space hazard control, safe entry procedures, rescue planning, and emergency response coordination.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Firefighting & Emergency Response</h3>
+        <p>Trained in fire prevention, emergency preparedness, firefighting techniques, and rapid incident response.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Gas Testing & Atmospheric Monitoring</h3>
+        <p>Competent in atmospheric testing, gas detection equipment use, hazardous atmosphere monitoring, and safe work verification.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Incident Investigation & Root Cause Analysis</h3>
+        <p>Skilled in incident reporting, investigation techniques, root cause analysis, and corrective action implementation.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Behavior-Based Safety (BBS)</h3>
+        <p>Trained in behavioral safety observation, intervention techniques, workforce engagement, and positive safety culture development.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>COHSS / Chemical Handling Safety</h3>
+        <p>Training in chemical hazard awareness, safe handling, storage, spill prevention, and chemical exposure control.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Safety Implementation</h3>
+        <p>Practical application of HSE systems, safety procedures, compliance programs, and workplace control measures.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Permit to Work (PTW)</h3>
+        <p>Trained in permit-to-work systems including authorization, risk control, task coordination, and safe work execution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Let’s build safer workplaces together through professional safety leadership and practical HSE solutions.</p>
+      </div>
+      <div class="contact-box">
+        <p>
+          Available for safety consultation, site supervision, HSE documentation support, inspections, and workforce safety development.
+        </p>
+        <div class="contact-info">
+          <span>nmoses68@yahoo.com</span>
+          <span>Phone: +966557388593</span>
+          <span>Location: Saudi Arabia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2026 Moses Njuguna | Safety Professional. Built with professionalism, purpose, and safety excellence.</p>
+  </footer>
+
+</body>
+</html>
